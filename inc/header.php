@@ -34,12 +34,12 @@
 </head>
 
 <body>
-    
+
 <!-- ヘッダー -->
 <header class="header">
     <div class="header_inner">
         <div class="header_logo"></div>
-
+        
         <nav class="header_nav">
             <ul class="header_list">
                 <li><a href=""></a>法人様向けプラン</li>
