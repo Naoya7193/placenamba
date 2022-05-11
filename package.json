@@ -1,0 +1,22 @@
+{
+  "name": "placenamba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/:css/ --no-source-map --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naoya7193/placenamba.git"
+  },
+  "author": "Naoya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naoya7193/placenamba/issues"
+  },
+  "homepage": "https://github.com/Naoya7193/placenamba#readme",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}
