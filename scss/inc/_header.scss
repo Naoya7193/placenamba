@@ -49,3 +49,24 @@
         margin-left: 25px;
     }
 }
+
+.scroll_on{
+    &.header{
+        background-color: color.$white;
+    }
+
+    .header_inner{
+        align-items: center;
+    }
+
+    .header_logo{
+        background-image: url(../image/header-logo-sm.png);
+        width: 20%;
+        height: 42px;
+        margin-top: unset;
+    }
+
+    .header_list li a{
+        padding: 1.5em 1.56em;
+    }
+}

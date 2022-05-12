@@ -363,6 +363,22 @@ html {
   transform: rotate(45deg) translateY(-50%);
 }
 
+.scroll_on.header {
+  background-color: #fff;
+}
+.scroll_on .header_inner {
+  align-items: center;
+}
+.scroll_on .header_logo {
+  background-image: url(../image/header-logo-sm.png);
+  width: 20%;
+  height: 42px;
+  margin-top: unset;
+}
+.scroll_on .header_list li a {
+  padding: 1.5em 1.56em;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
