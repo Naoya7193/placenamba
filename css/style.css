@@ -46,6 +46,8 @@ html {
 }
 .mv_image {
   width: 85.5%;
+  object-fit: cover;
+  object-position: top 20px;
 }
 
 .concept {
