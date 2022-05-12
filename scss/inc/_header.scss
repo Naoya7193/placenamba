@@ -6,16 +6,15 @@
 .header{
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100%;
-    max-width: 1440px;
     z-index: 20;
 
     &_inner{
         display: flex;
         justify-content: space-between;
         width: 95%;
+        max-width: 1368px;
         margin: 0 auto;
     }
 

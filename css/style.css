@@ -259,6 +259,9 @@ html {
   margin-top: 85px;
   padding-top: 90px;
   position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 .service::after {
   position: absolute;
@@ -296,16 +299,15 @@ html {
 .header {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 100%;
-  max-width: 1440px;
   z-index: 20;
 }
 .header_inner {
   display: flex;
   justify-content: space-between;
   width: 95%;
+  max-width: 1368px;
   margin: 0 auto;
 }
 .header_logo {
