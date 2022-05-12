@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1440px;
+}
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+.header_logo {
+  background-image: url(../image/header-logo-lg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 17%;
+  height: 100px;
+  margin-top: 25px;
+}
+.header_nav {
+  display: flex;
+  height: fit-content;
+}
+.header_list {
+  display: flex;
+}
+.header_list li a {
+  display: block;
+  padding: 1.38em 1.56em;
+}
+.header .button {
+  display: block;
+  background-color: #D4FF45;
+  padding: 1em 2.25em;
+  font-size: 16px;
+  font-weight: 600;
+  margin: auto;
+  border-radius: 999px;
+  position: relative;
+  min-width: 182px;
+  letter-spacing: 0.16em;
+  margin-left: 25px;
+}
+.header .button::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #000;
+  width: 33px;
+  height: 1px;
+  right: 2em;
+  top: 50%;
+  transform: translateX(9%) translateY(50%);
+}
+.header .button::after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #000;
+  width: 5px;
+  height: 5px;
+  right: 2em;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+/*# sourceMappingURL=style.css.map */

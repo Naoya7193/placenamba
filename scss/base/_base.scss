@@ -1,0 +1,16 @@
+@use "../setting/color";
+@use "../setting/function";
+
+
+// 共通パーツ
+body{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    color: color.$base-color;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .05em;
+}
+
+html {
+    scroll-behavior: smooth;
+}

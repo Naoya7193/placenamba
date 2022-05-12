@@ -1,0 +1,48 @@
+@use "../base/base";
+@use "../mixin/btn";
+@use "../setting/color";
+@use "../setting/function";
+
+// ヘッダー
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1440px;
+
+    &_inner{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    &_logo{
+        background-image: url(../image/header-logo-lg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 17%;
+        height: 100px;
+        margin-top: 25px;
+    }
+
+    &_nav{
+        display: flex;
+        height: fit-content;
+    }
+
+    &_list{
+        display: flex;
+
+        li a{
+            display: block;
+            padding: 1.38em 1.56em;
+        }
+    }
+
+    .button{
+        @include btn.btn('header');
+        margin-left: 25px;
+    }
+}

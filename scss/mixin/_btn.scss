@@ -1,0 +1,53 @@
+@use "../setting/color";
+@use "../setting/function";
+
+
+$initType: 'normal';
+@mixin btn($type:$initType){
+    display: block;
+    background-color: color.$sub-color;
+    padding: 1em 2.25em;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+    border-radius: 999px;
+
+    position: relative;
+
+    // TODO: 疑似要素は後で画像で入れる
+    &::before{
+        position: absolute;
+        content: "";
+        border-bottom: 1px solid color.$base-color;
+        width: 33px;
+        height: 1px;
+        right: 2em;
+        top: 50%;
+        transform: translateX(9%) translateY(50%);
+    }
+
+    &::after{
+        position: absolute;
+        content: "";
+        border-top: 1px solid color.$base-color;
+        width: 5px;
+        height: 5px;
+        right: 2em;
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+    }
+
+    @if( $type == 'normal' ){
+        min-width: 346px;
+    }
+
+    @else if( $type == 'header' ){
+        min-width: 182px;
+        letter-spacing: .16em;
+    }
+
+    @else if( $type == 'contact' ){
+        min-width: 510px;
+    }
+
+}
