@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+// ベース
+@use "base/base";
+
 // トップページ
 @use 'page/top';
 

@@ -3,6 +3,7 @@
 <!-- MV -->
 <div class="mv">
     <img src="./image/mv.png" alt="シェアオフィスの画像" class="mv_image">
+    <p class="mv_copy">ミニマムな働き方、もっと広がる可能性</p>
 </div>
 
 <!-- コンセプト -->
@@ -13,7 +14,7 @@
                 なんば駅から徒歩2分の
                 <br>シェアオフィス。
             </h1>
-            <p class="concept subcopy">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミ</p>
+            <p class="concept_subcopy">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミ</p>
             <a href="" class="button">Googleマップで見る</a>
         </div>
         <img src="./image/map.png" alt="地図の画像" class="concept_map">
@@ -31,7 +32,7 @@
         <div class="plan_summary_textarea">
             <h3 class="plan_summary_title">
                 「もっと自由な環境で
-                <br>前より会社が好きになる」
+                <br>　前より会社が好きになる」
             </h3>
             <p class="plan_summary_text">
                 アクセスの良さとオシャレなオフィスでより働きやすい環境を提供します。
@@ -39,19 +40,21 @@
             </p>
             <a href="" class="button">企業様向けプラン</a>
         </div>
+        <img src="./image/plan01.png" alt="プライベートオフィスの画像" class="plan_summary_image">
     </div>
 
     <div class="plan_summary">
         <div class="plan_summary_textarea">
             <h3 class="plan_summary_title">
                 「テレワークでは得られない
-                <br>人との繋がりがほしい」
+                <br>　人との繋がりがほしい」
             </h3>
             <p class="plan_summary_text">
                 個室の利用ができる「シングルオフィスプラン」とより安価でコワーキングスペースとして利用できる「フリーオフィスプラン」の２種類をご用意しております。
             </p>
             <a href="" class="button">個人様向けプラン</a>
         </div>
+        <img src="./image/plan02.png" alt="シングルオフィスの画像" class="plan_summary_image">
     </div>
 </section>
 
@@ -62,12 +65,12 @@
         <p class="section_title_sub">オフィス紹介</p>
     </div>
 
-    <div class="office_button_block">
+    <div class="office_button_block wrapper">
         <a href="" class="buck_button"></a>
         <a href="" class="front_button"></a>
     </div>
 
-    <div class="office_introduction">
+    <div class="office_introduction wrapper">
         <div class="office_introduction_card">
             <img src="./image/office01.png" alt="プライベートオフィスの画像" class="office_introduction_image">
             <p class="office_introduction_title">プライベートオフィス</p>

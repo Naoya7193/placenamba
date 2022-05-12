@@ -3,13 +3,13 @@
 
 
 $initType: 'normal';
-@mixin btn($type:$initType){
+@mixin btn($type:$initType ,$btn-color: color.$sub-color ,$text-color: color.$base-color){
     display: block;
-    background-color: color.$sub-color;
+    background-color: $btn-color;
+    color: $text-color;
     padding: 1em 2.25em;
     font-size: 16px;
     font-weight: 600;
-    margin: auto;
     border-radius: 999px;
 
     position: relative;
@@ -18,7 +18,7 @@ $initType: 'normal';
     &::before{
         position: absolute;
         content: "";
-        border-bottom: 1px solid color.$base-color;
+        border-bottom: 1px solid $text-color;
         width: 33px;
         height: 1px;
         right: 2em;
@@ -29,7 +29,7 @@ $initType: 'normal';
     &::after{
         position: absolute;
         content: "";
-        border-top: 1px solid color.$base-color;
+        border-top: 1px solid $text-color;
         width: 5px;
         height: 5px;
         right: 2em;
@@ -38,7 +38,9 @@ $initType: 'normal';
     }
 
     @if( $type == 'normal' ){
-        min-width: 346px;
+        max-width: 346px;
+        font-size: 18px;
+        font-weight: 400;
     }
 
     @else if( $type == 'header' ){
@@ -47,7 +49,7 @@ $initType: 'normal';
     }
 
     @else if( $type == 'contact' ){
-        min-width: 510px;
+        max-width: 510px;
     }
 
 }
