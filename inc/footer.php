@@ -1,9 +1,7 @@
 <!-- コンタクト -->
 <div class="contact">
-    <div class="contact_inner">
-        <a href="" class="button">今すぐ内覧予約</a>
-        <a href="" class="button">お問い合わせ</a>
-    </div>
+    <a href="" class="button reserve">今すぐ内覧予約</a>
+    <a href="" class="button inquiry">お問い合わせ</a>
 </div>
 
 <!-- フッター -->
@@ -20,10 +18,10 @@
         </div>
         <div class="footer_nav">
             <ul class="footer_list">
-                <li><a href=""></a>法人様向けプラン</li>
-                <li><a href=""></a>個人様向けプラン</li>
-                <li><a href=""></a>利用者紹介</li>
-                <li><a href=""></a>アクセス</li>
+                <li><a href="">法人様向けプラン</a></li>
+                <li><a href="">個人様向けプラン</a></li>
+                <li><a href="">利用者紹介</a></li>
+                <li><a href="">アクセス</a></li>
             </ul>
         </div>
 

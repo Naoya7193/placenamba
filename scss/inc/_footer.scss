@@ -1,0 +1,75 @@
+@use "../mixin/btn";
+@use "../setting/color";
+@use "../setting/function";
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 165px;
+    padding-top: 150px;
+    padding-bottom: 140px;
+
+    background-image: url(../image/contact-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .button{
+        &.reserve{
+            @include btn.btn($type:'contact');
+            margin-bottom: 32px;
+        }
+
+        &.inquiry{
+            @include btn.btn($type:'contact', $btn-color:color.$base-color, $text_color:color.$white);
+        }
+    }
+}
+
+.footer{
+    background-color: color.$base-color;
+    color: color.$white;
+
+    &_inner{
+        display: flex;
+        padding-top: 85px;
+        padding-bottom: 65px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &_image{
+        width: 17%;
+        object-fit: contain;
+    }
+
+    &_info{
+        font-family: Arial, Helvetica, sans-serif;
+
+        .address{
+            line-height: 1.56;
+            margin-bottom: 20px;
+        }
+
+        .tel_number{
+            margin-bottom: 10px;
+        }
+    }
+
+    &_list{
+        display: flex;
+
+        li a{
+            margin-left: 45px;
+        }
+    }
+
+    .copylight{
+        text-align: center;
+        padding-bottom: 1em;
+        font-family: "Avenir", sans-serif;
+        font-size: 14px;
+    }
+}
