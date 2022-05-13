@@ -31,6 +31,8 @@
     &_nav{
         display: flex;
         height: fit-content;
+        width: 80%;
+        justify-content: flex-end;
     }
 
     &_list{
@@ -38,14 +40,16 @@
 
         li a{
             display: block;
-            padding: 1.38em 1.56em;
+            padding: 1.38em clamp(.8em, 1.8vw, 1.56em);
+            font-size: clamp(14px,1.2vw,16px);
+            white-space: nowrap;
         }
     }
 
     .button{
         @include btn.btn('header');
-        margin: auto;
-        margin-left: 25px;
+        margin: auto 0;
+        margin-left: 2%;
     }
 }
 
@@ -66,6 +70,6 @@
     }
 
     .header_list li a{
-        padding: 1.5em 1.56em;
+        padding: 1.5em clamp(.8em, 1.8vw, 1.56em);
     }
 }

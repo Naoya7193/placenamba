@@ -8,10 +8,12 @@ $initType: 'normal';
     background-color: $btn-color;
     color: $text-color;
     padding: 1em 2.25em;
-    font-size: 16px;
+    font-size: clamp(14px,1.2vw,16px);
     font-weight: 600;
     border-radius: 999px;
     text-align: center;
+    white-space: nowrap;
+    width: 100%;
 
     position: relative;
 
@@ -20,7 +22,7 @@ $initType: 'normal';
         position: absolute;
         content: "";
         border-bottom: 1px solid $text-color;
-        width: 33px;
+        width: clamp(16px,2.8vw,33px);
         height: 1px;
         right: 2em;
         top: 50%;
@@ -40,18 +42,20 @@ $initType: 'normal';
 
     @if( $type == 'normal' ){
         max-width: 346px;
-        font-size: 18px;
+        min-width: 264px;
+        font-size: clamp(16px,1.3vw,18px);
         font-weight: 400;
     }
 
     @else if( $type == 'header' ){
-        min-width: 182px;
+        max-width: 182px;
+        min-width: 150px;
         letter-spacing: .16em;
         text-align: unset;
     }
 
     @else if( $type == 'contact' ){
-        min-width: 510px;
+        max-width: 510px;
         font-family: Arial, Helvetica, sans-serif;
         padding: 1.87em;
     }
