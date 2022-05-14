@@ -11,7 +11,7 @@
     <div class="concept_inner wrapper">
         <div class="concept_textarea">
             <h1 class="concept_maincopy">
-                なんば駅から徒歩8分の
+                なんば駅から徒歩2分の
                 <br>シェアオフィス。
             </h1>
             <p class="concept_subcopy">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミ</p>
