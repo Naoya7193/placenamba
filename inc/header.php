@@ -34,21 +34,22 @@
 </head>
 
 <body>
+<?php wp_head(); ?>
 
 <!-- ヘッダー -->
 <header class="header">
     <div class="header_inner">
-        <div class="header_logo"></div>
+        <a href="/" class="header_logo"></a>
 
         <nav class="header_nav">
             <ul class="header_list">
-                <li><a href="">法人様向けプラン</a></li>
-                <li><a href="">個人様向けプラン</a></li>
-                <li><a href="">利用者紹介</a></li>
-                <li><a href="">アクセス</a></li>
+                <li><a href="/corporate">企業様向けプラン</a></li>
+                <li><a href="/individual">個人様向けプラン</a></li>
+                <li><a href="/user">利用者紹介</a></li>
+                <li><a href="/access">アクセス</a></li>
             </ul>
 
-            <a href="" class="button">内覧予約</a>
+            <a href="/contact" class="button">内覧予約</a>
         </nav>
     </div>
 </header>

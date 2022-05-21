@@ -9,3 +9,15 @@ $(window).on("scroll load resize", function(){
         $('.header').removeClass('scroll_on');
     }
 });
+
+let id = false;
+
+$(window).on("scroll touchmove",function(){
+    $('.header').css('transform','scale(1,0)');
+
+    if(id) clearTimeout(id);
+
+    id = setTimeout(function(){
+        $('.header').css('transform','scale(1,1)');
+    },400);
+});

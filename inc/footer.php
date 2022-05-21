@@ -1,13 +1,16 @@
 <!-- コンタクト -->
-<div class="contact">
-    <a href="" class="button reserve">今すぐ内覧予約</a>
-    <a href="" class="button inquiry">お問い合わせ</a>
-</div>
+<?php if (is_page('contact')):
+        else:?>
+    <div class="contact">
+        <a href="/contact" class="button reserve">今すぐ内覧予約</a>
+        <a href="/contact" class="button inquiry">お問い合わせ</a>
+    </div>
+<?php endif; ?>
 
 <!-- フッター -->
 <footer class="footer">
     <div class="footer_inner wrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/image/logo-white.png" alt="ロゴの画像" class="footer_image">
+        <a href="/" class="footer_image_link"><img src="<?php echo get_template_directory_uri(); ?>/image/logo-white.png" alt="ロゴの画像" class="footer_image"></a>
         <div class="footer_info">
             <p class="address">
                 〒542-0076 
@@ -18,10 +21,10 @@
         </div>
         <div class="footer_nav">
             <ul class="footer_list">
-                <li><a href="">法人様向けプラン</a></li>
-                <li><a href="">個人様向けプラン</a></li>
-                <li><a href="">利用者紹介</a></li>
-                <li><a href="">アクセス</a></li>
+                <li><a href="/corporate">企業様向けプラン</a></li>
+                <li><a href="/individual">個人様向けプラン</a></li>
+                <li><a href="/user">利用者紹介</a></li>
+                <li><a href="/access">アクセス</a></li>
             </ul>
         </div>
 
@@ -33,5 +36,7 @@
 <!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+
+<?php wp_footer(); ?>
 
 </body>

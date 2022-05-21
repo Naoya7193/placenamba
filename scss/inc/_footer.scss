@@ -41,8 +41,12 @@
         align-items: flex-start;
     }
 
-    &_image{
+    &_image_link{
         width: 17%;
+    }
+
+    &_image{
+        width: 100%;
         object-fit: contain;
         margin-right: 30px;
     }

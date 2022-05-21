@@ -320,6 +320,9 @@ html {
   left: 0;
   width: 100%;
   z-index: 20;
+  transform-origin: top;
+  transform: scale(1, 1);
+  transition: 0.5s transform;
 }
 .header_inner {
   display: flex;
@@ -406,6 +409,10 @@ html {
 }
 .scroll_on .header_list li a {
   padding: 1.5em clamp(0.8em, 1.8vw, 1.56em);
+}
+
+.hide .header {
+  transform: scale(1, 0);
 }
 
 .contact {
@@ -506,8 +513,11 @@ html {
   justify-content: space-between;
   align-items: flex-start;
 }
-.footer_image {
+.footer_image_link {
   width: 17%;
+}
+.footer_image {
+  width: 100%;
   object-fit: contain;
   margin-right: 30px;
 }

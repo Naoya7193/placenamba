@@ -9,6 +9,9 @@
     left: 0;
     width: 100%;
     z-index: 20;
+    transform-origin: top;
+    transform: scale(1,1);
+    transition: .5s transform;
 
     &_inner{
         display: flex;
@@ -71,5 +74,11 @@
 
     .header_list li a{
         padding: 1.5em clamp(.8em, 1.8vw, 1.56em);
+    }
+}
+
+.hide{
+    .header{
+        transform: scale(1,0);
     }
 }

@@ -38,7 +38,7 @@
                 アクセスの良さとオシャレなオフィスでより働きやすい環境を提供します。
                 <br>各オフィスの入り口にオートロックがついており、セキュリティ面も安心してご利用いただけます。
             </p>
-            <a href="" class="button">企業様向けプラン</a>
+            <a href="/corporate" class="button">企業様向けプラン</a>
         </div>
         <img src="<?php echo get_template_directory_uri(); ?>/image/plan01.png" alt="プライベートオフィスの画像" class="plan_summary_image">
     </div>
@@ -52,7 +52,7 @@
             <p class="plan_summary_text">
                 個室の利用ができる「シングルオフィスプラン」とより安価でコワーキングスペースとして利用できる「フリーオフィスプラン」の２種類をご用意しております。
             </p>
-            <a href="" class="button">個人様向けプラン</a>
+            <a href="/individual" class="button">個人様向けプラン</a>
         </div>
         <img src="<?php echo get_template_directory_uri(); ?>/image/plan02.png" alt="シングルオフィスの画像" class="plan_summary_image">
     </div>
