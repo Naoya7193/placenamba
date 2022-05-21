@@ -7,7 +7,7 @@
 <!-- フッター -->
 <footer class="footer">
     <div class="footer_inner wrapper">
-        <img src="./image/logo-white.png" alt="ロゴの画像" class="footer_image">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/logo-white.png" alt="ロゴの画像" class="footer_image">
         <div class="footer_info">
             <p class="address">
                 〒542-0076 
@@ -32,6 +32,6 @@
 
 <!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="./js/script.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 
 </body>
