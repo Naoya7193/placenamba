@@ -17,6 +17,12 @@ html {
   margin: 0 auto;
 }
 
+.wrapper_sm {
+  width: 72%;
+  max-width: 1039px;
+  margin: 0 auto;
+}
+
 .section_title {
   margin: 0 auto;
   text-align: center;
@@ -546,6 +552,42 @@ html {
   padding-bottom: 1em;
   font-family: "Avenir", sans-serif;
   font-size: clamp(10px, 1vw, 14px);
+}
+
+.mv_temp {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: -20;
+}
+.mv_temp_title {
+  font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  background-color: #F4F4F4;
+  width: 40%;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  padding-left: 10.8%;
+}
+.mv_temp_title_inner {
+  padding-bottom: 24px;
+  position: relative;
+}
+.mv_temp_title_inner::after {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid #000;
+  height: 3px;
+  width: 40px;
+  left: 0;
+  bottom: 0;
+}
+.mv_temp_image {
+  width: 86%;
 }
 
 /*# sourceMappingURL=style.css.map */
