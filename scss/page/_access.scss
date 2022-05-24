@@ -1,0 +1,108 @@
+@use "../mixin/btn";
+@use "../base/base";
+@use "../setting/color";
+@use "../setting/function";
+
+.company-block{
+    margin-top: 130px;
+
+    .wp-block-table{
+        margin-top: 65px;
+
+        table{
+            width: 70%;
+        }
+
+        td{
+            padding-top: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid color.$main-color;
+
+            &:first-child{
+                width: 35%;
+            }
+        }
+
+        tr:first-child{
+            td{
+                padding-top: unset;
+            }
+        }
+    }
+}
+
+.access-block{
+    margin-top: 145px;
+
+    &_textarea{
+        margin-top: 40px;
+        margin-bottom: 60px;
+
+        &_address{
+            margin-bottom: 12px;
+
+            &:last-child{
+                margin-bottom: unset;
+            }
+        }
+    }
+
+    iframe{
+        width: 100%;
+        aspect-ratio: 1039/520;
+        height: auto;
+    }
+}
+
+.locations-block{
+    margin-top: 155px;
+
+    &_container{
+        margin-top: 40px;
+    }
+
+    &_card{
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+
+        &:last-child{
+            margin-bottom: unset;
+        }
+
+        .wp-block-image{
+            width: 31%;
+            object-fit: contain;
+        }
+
+        &_textarea{
+            margin-left: 7%;
+        }
+
+        &_title{
+            font-family: "Avenir", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        &_address{
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: "";
+                background-image: url(../image/locations_icon.svg);
+                width: 12px;
+                height: 18px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}

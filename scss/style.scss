@@ -12,5 +12,8 @@
 // フッター
 @use 'inc/footer';
 
-// フッター
+// 固定ページ用MVテンプレート
 @use 'inc/mv-temp';
+
+// アクセスページ
+@use 'page/access';
