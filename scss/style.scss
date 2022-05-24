@@ -18,6 +18,9 @@
 // 固定ページ用その他サービステンプレート
 @use 'inc/others-temp';
 
+// 固定ページ用施設・設備テンプレート
+@use 'inc/facility-temp';
+
 // アクセスページ
 @use 'page/access';
 
