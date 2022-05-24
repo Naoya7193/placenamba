@@ -601,6 +601,10 @@ html {
   width: 86%;
 }
 
+.page-others .service_container {
+  width: 80%;
+}
+
 .company-block {
   margin-top: 130px;
 }
@@ -684,6 +688,86 @@ html {
   background-position: center;
   top: 0;
   left: 0;
+}
+
+.page-corporate {
+  margin-top: 136px;
+}
+.page-corporate_copy {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 65px;
+}
+.page-corporate_text {
+  width: 100%;
+  position: relative;
+}
+.page-corporate_text::after {
+  position: absolute;
+  content: "";
+  background-image: url(../image/private_plan.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 65%;
+  height: auto;
+  aspect-ratio: 674/396;
+  top: 0;
+  right: -19.5%;
+}
+.page-corporate_text_inner {
+  font-size: 20px;
+  line-height: 2em;
+  letter-spacing: 0;
+  text-align: justify;
+  width: 48%;
+}
+.page-corporate_price {
+  padding-top: 85px;
+  position: relative;
+}
+.page-corporate_price::after {
+  position: absolute;
+  z-index: -20;
+  content: "";
+  background-color: #F5F5F5;
+  width: 75%;
+  height: 1227px;
+  top: 0;
+  right: -19.5%;
+}
+.page-corporate_table {
+  margin-top: 40px;
+}
+.page-corporate_table td {
+  padding-bottom: 45px;
+}
+.page-corporate_table td:first-child {
+  width: 50%;
+}
+.page-corporate_table tr:last-child td {
+  padding-bottom: unset;
+}
+.page-corporate_facility {
+  margin-top: 135px;
+}
+.page-corporate_facility_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 65px;
+  margin-bottom: 70px;
+}
+.page-corporate_facility_card {
+  width: 32%;
+  margin-bottom: 65px;
+}
+.page-corporate_facility_image {
+  width: 100%;
+}
+.page-corporate_facility_image_title {
+  font-weight: 600;
+  margin-top: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

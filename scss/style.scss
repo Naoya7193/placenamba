@@ -15,5 +15,11 @@
 // 固定ページ用MVテンプレート
 @use 'inc/mv-temp';
 
+// 固定ページ用その他サービステンプレート
+@use 'inc/others-temp';
+
 // アクセスページ
 @use 'page/access';
+
+// 企業様向けプランページ
+@use 'page/corporate';
