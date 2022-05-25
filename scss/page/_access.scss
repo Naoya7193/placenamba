@@ -105,5 +105,24 @@
                 left: 0;
             }
         }
+
+        &_tel{
+            padding-left: 25px;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: "";
+                background-image: url(../image/tel_icon.svg);
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                top: 0;
+                left: 0;
+                transform: translateX(-15%);
+            }
+        }
     }
 }

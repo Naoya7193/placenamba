@@ -756,6 +756,23 @@ html {
   top: 0;
   left: 0;
 }
+.locations-block_card_tel {
+  padding-left: 25px;
+  position: relative;
+}
+.locations-block_card_tel::before {
+  position: absolute;
+  content: "";
+  background-image: url(../image/tel_icon.svg);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 0;
+  left: 0;
+  transform: translateX(-15%);
+}
 
 .page-plan {
   margin-top: 136px;
