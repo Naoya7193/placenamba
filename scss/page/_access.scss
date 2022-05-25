@@ -55,6 +55,7 @@
 
 .locations-block{
     margin-top: 155px;
+    margin-bottom: 160px;
 
     &_container{
         margin-top: 40px;
@@ -71,6 +72,7 @@
 
         .wp-block-image{
             width: 31%;
+            margin: unset;
             object-fit: contain;
         }
 

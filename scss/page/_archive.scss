@@ -1,0 +1,52 @@
+@use "../base/base";
+@use "../setting/color";
+@use "../setting/function";
+
+.page-user{
+    &_textarea{
+        margin-top: 130px;
+        margin-bottom: 40px;
+    }
+
+    &_copy{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+
+    &_text{
+        font-size: 20px;
+        line-height: 2em;
+        letter-spacing: 0;
+        text-align: justify;
+    }
+
+    &_post{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &_card{
+        width: 47%;
+        margin-bottom: 115px;
+
+        &_link{
+            display: block;
+        }
+
+        &_image{
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &_title{
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 10px;
+
+        }
+    }
+}
+

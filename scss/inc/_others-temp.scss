@@ -1,8 +1,16 @@
+@use "../mixin/btn";
 @use "../setting/color";
 @use "../setting/function";
 
 .page-others{
     .service_container{
         width: 80%;
+        margin-bottom: 80px;
+    }
+
+    .button{
+        @include btn.btn($type:'contact');
+        margin: 0 auto;
+        display: none;
     }
 }

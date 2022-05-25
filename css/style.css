@@ -293,6 +293,7 @@ html {
   margin: 0 auto;
   max-width: 1440px;
   margin-top: 85px;
+  padding-bottom: 160px;
 }
 .service::after {
   position: absolute;
@@ -425,7 +426,7 @@ html {
   margin-top: unset;
 }
 .scroll_on .header_list li a {
-  padding: 1.5em clamp(0.8em, 1.8vw, 1.56em);
+  padding: 2.18em clamp(0.8em, 1.8vw, 1.56em) 1.88em;
 }
 
 .hide .header {
@@ -436,7 +437,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 165px;
   padding-top: 150px;
   padding-bottom: 140px;
   background-image: url(../image/contact-background.png);
@@ -603,6 +603,45 @@ html {
 
 .page-others .service_container {
   width: 80%;
+  margin-bottom: 80px;
+}
+.page-others .button {
+  display: block;
+  background-color: #D4FF45;
+  color: #000;
+  padding: 1em 2.25em;
+  font-size: clamp(14px, 1.2vw, 16px);
+  font-weight: 600;
+  border-radius: 999px;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  max-width: 510px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1.87em;
+  margin: 0 auto;
+  display: none;
+}
+.page-others .button::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #000;
+  width: clamp(16px, 2.8vw, 33px);
+  height: 1px;
+  right: 2em;
+  top: 50%;
+  transform: translateX(9%) translateY(50%);
+}
+.page-others .button::after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #000;
+  width: 5px;
+  height: 5px;
+  right: 2em;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
 }
 
 .page-facility {
@@ -625,6 +664,10 @@ html {
 .page-facility_image_title {
   font-weight: 600;
   margin-top: 14px;
+}
+
+.free_only {
+  display: none;
 }
 
 .company-block {
@@ -669,6 +712,7 @@ html {
 
 .locations-block {
   margin-top: 155px;
+  margin-bottom: 160px;
 }
 .locations-block_container {
   margin-top: 40px;
@@ -683,6 +727,7 @@ html {
 }
 .locations-block_card .wp-block-image {
   width: 31%;
+  margin: unset;
   object-fit: contain;
 }
 .locations-block_card_textarea {
@@ -712,19 +757,19 @@ html {
   left: 0;
 }
 
-.page-corporate {
+.page-plan {
   margin-top: 136px;
 }
-.page-corporate_copy {
+.page-plan_copy {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 65px;
 }
-.page-corporate_text {
+.page-plan_text {
   width: 100%;
   position: relative;
 }
-.page-corporate_text::after {
+.page-plan_text::after {
   position: absolute;
   content: "";
   background-image: url(../image/private_plan.png);
@@ -737,18 +782,18 @@ html {
   top: 0;
   right: -19.5%;
 }
-.page-corporate_text_inner {
+.page-plan_text_inner {
   font-size: 20px;
   line-height: 2em;
   letter-spacing: 0;
   text-align: justify;
   width: 48%;
 }
-.page-corporate_price {
+.page-plan_price {
   padding-top: 85px;
   position: relative;
 }
-.page-corporate_price::after {
+.page-plan_price::after {
   position: absolute;
   z-index: -20;
   content: "";
@@ -758,17 +803,159 @@ html {
   top: 0;
   right: -19.5%;
 }
-.page-corporate_table {
+.page-plan_table {
   margin-top: 40px;
 }
-.page-corporate_table td {
+.page-plan_table td {
   padding-bottom: 45px;
 }
-.page-corporate_table td:first-child {
+.page-plan_table td:first-child {
   width: 50%;
 }
-.page-corporate_table tr:last-child td {
+.page-plan_table tr:last-child td {
   padding-bottom: unset;
+}
+
+.page-individual {
+  margin-top: 165px;
+}
+.page-individual_copy {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.page-individual_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.page-individual_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 47%;
+  aspect-ratio: 488/287;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.page-individual_card.single {
+  background-image: url(../image/single_office_plan.png);
+}
+.page-individual_card.free {
+  background-image: url(../image/free_office_plan.png);
+}
+.page-individual_card_plan {
+  position: absolute;
+  font-family: "Avenir", sans-serif;
+  top: 24%;
+  left: 16%;
+}
+.page-individual_card_copy {
+  margin-bottom: 12px;
+}
+.page-individual_card_title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.single.page-plan,
+.free.page-plan {
+  position: relative;
+}
+.single.page-plan::before,
+.free.page-plan::before {
+  position: absolute;
+  content: "";
+  background-color: #F5F5F5;
+  width: 65%;
+  top: 0;
+  left: 0;
+  z-index: -20;
+}
+.single .page-plan_price::after,
+.free .page-plan_price::after {
+  content: unset;
+}
+
+.single.page-plan {
+  margin-top: 230px;
+  padding-top: 155px;
+}
+.single.page-plan::before {
+  height: 1325px;
+}
+.single .page-plan_text::after {
+  background-image: url(../image/single_office.png);
+}
+.single .button {
+  display: block;
+}
+
+.free.page-plan {
+  margin-top: 140px;
+  padding-top: 140px;
+}
+.free.page-plan::before {
+  height: 110%;
+}
+.free .page-plan_text::after {
+  background-image: url(../image/free_office.png);
+}
+.free .page-facility {
+  margin-top: 150px;
+}
+.free .page-facility_container {
+  margin-bottom: 85px;
+}
+.free .page-facility_card,
+.free .page-section_main_title,
+.free .page-section_sub_title {
+  display: none;
+}
+.free .free_only,
+.free .both {
+  display: block;
+}
+
+.page-user_textarea {
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+.page-user_copy {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.page-user_text {
+  font-size: 20px;
+  line-height: 2em;
+  letter-spacing: 0;
+  text-align: justify;
+}
+.page-user_post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.page-user_card {
+  width: 47%;
+  margin-bottom: 115px;
+}
+.page-user_card_link {
+  display: block;
+}
+.page-user_card_image {
+  width: 100%;
+  object-fit: contain;
+}
+.page-user_card_title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

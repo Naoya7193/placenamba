@@ -29,4 +29,6 @@
             <p class="service_title">ドリンクサービス</p>
         </div>
     </div>
+
+    <a href="/contact" class="button reserve">今すぐ内覧予約</a>
 </div>

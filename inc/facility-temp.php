@@ -24,9 +24,17 @@
             <img src="<?php echo get_template_directory_uri(); ?>/image/facility05.png" alt="ゲスト同伴利用の画像" class="page-facility_image">
             <p class="page-facility_image_title">ゲスト同伴利用</p>
         </div>
-        <div class="page-facility_card">
+        <div class="page-facility_card both">
             <img src="<?php echo get_template_directory_uri(); ?>/image/facility06.png" alt="個別ロッカーの画像" class="page-facility_image">
             <p class="page-facility_image_title">個別ロッカー</p>
+        </div>
+        <div class="page-facility_card free_only">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/facility07.png" alt="ドリンクサービスの画像" class="page-facility_image">
+            <p class="page-facility_image_title">ドリンクサービス</p>
+        </div>
+        <div class="page-facility_card free_only">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/facility08.png" alt="Wi-Fi利用可能の画像" class="page-facility_image">
+            <p class="page-facility_image_title">Wi-Fi利用可能</p>
         </div>
     </div>
 </div>
