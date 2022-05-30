@@ -7,20 +7,25 @@
     <p class="page-individual_copy">用途に合わせて利用できる2つのプランをご用意</p>
     <div class="page-individual_container">
         <div class="page-individual_card single">
-            <p class="page-individual_card_plan">Plan01</p>
-            <p class="page-individual_card_copy">個室利用ができる</p>
-            <p class="page-individual_card_title">シングルオフィスプラン</p>
+            <a href="">
+                <p class="page-individual_card_plan">Plan01</p>
+                <p class="page-individual_card_copy">個室利用ができる</p>
+                <p class="page-individual_card_title">シングルオフィスプラン</p>
+            </a>
         </div>
         <div class="page-individual_card free">
-            <p class="page-individual_card_plan">Plan02</p>
-            <p class="page-individual_card_copy">共有スペースを自由に利用</p>
-            <p class="page-individual_card_title">フリーオフィスプラン</p>
+            <a href="">
+                <p class="page-individual_card_plan">Plan02</p>
+                <p class="page-individual_card_copy">共有スペースを自由に利用</p>
+                <p class="page-individual_card_title">フリーオフィスプラン</p>
+            </a>
         </div>
     </div>
 </div>
 
 <!-- シングルオフィスプラン -->
 <div class="page-plan single">
+    <p class="page-plan_number wrapper">Plan01</p>
     <div class="page-plan_inner wrapper_sm">
         <p class="page-plan_copy">個室利用ができるシングルオフィスプラン</p>
         <div class="page-plan_text">
@@ -54,6 +59,7 @@
 
 <!-- フリーオフィスプラン -->
 <div class="page-plan free">
+    <p class="page-plan_number wrapper">Plan02</p>
     <div class="page-plan_inner wrapper_sm">
         <p class="page-plan_copy">共有スペースを自由に利用できるフリーオフィスプラン</p>
         <div class="page-plan_text">
@@ -79,7 +85,7 @@
             </table>
         </div>
     </div>
-    
+
     <?php include 'inc/facility-temp.php'; ?>
 
 </div>

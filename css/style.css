@@ -850,16 +850,20 @@ html {
   margin-top: 50px;
 }
 .page-individual_card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 47%;
   aspect-ratio: 488/287;
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+.page-individual_card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .page-individual_card.single {
   background-image: url(../image/single_office_plan.png);
@@ -873,6 +877,16 @@ html {
   top: 24%;
   left: 16%;
 }
+.page-individual_card_plan::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #707070;
+  bottom: -50%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  transform: rotate(-26deg);
+}
 .page-individual_card_copy {
   margin-bottom: 12px;
 }
@@ -884,6 +898,7 @@ html {
 .single.page-plan,
 .free.page-plan {
   position: relative;
+  padding-top: 55px;
 }
 .single.page-plan::before,
 .free.page-plan::before {
@@ -900,9 +915,26 @@ html {
   content: unset;
 }
 
+.page-plan_number {
+  font-family: "Avenir", sans-serif;
+  font-size: 39px;
+  font-weight: 600;
+  margin-bottom: 45px;
+  position: relative;
+}
+.page-plan_number::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #707070;
+  width: 130px;
+  height: 1px;
+  bottom: -50%;
+  left: 3%;
+  transform: rotate(-26deg);
+}
+
 .single.page-plan {
   margin-top: 230px;
-  padding-top: 155px;
 }
 .single.page-plan::before {
   height: 1325px;
@@ -916,7 +948,6 @@ html {
 
 .free.page-plan {
   margin-top: 140px;
-  padding-top: 140px;
 }
 .free.page-plan::before {
   height: 110%;
