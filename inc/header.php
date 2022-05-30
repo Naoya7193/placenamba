@@ -37,7 +37,13 @@
 <?php wp_head(); ?>
 
 <!-- ヘッダー -->
-<header class="header">
+<header
+    <?php if(is_page() or get_post_type()==="user"):?>
+        echo class="header page-header"
+    <?php else: ?>
+        echo class="header"
+    <?php endif;?>>
+
     <div class="header_inner">
         <a href="/" class="header_logo"></a>
 

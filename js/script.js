@@ -13,11 +13,11 @@ $(window).on("scroll load resize", function(){
 let id = false;
 
 $(window).on("scroll touchmove",function(){
-    $('.header').css('transform','scale(1,0)');
+    $('.header').css('top','-100px');
 
     if(id) clearTimeout(id);
 
     id = setTimeout(function(){
-        $('.header').css('transform','scale(1,1)');
+        $('.header').css('top','0');
     },400);
 });

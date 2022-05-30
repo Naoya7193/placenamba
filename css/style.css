@@ -339,8 +339,7 @@ html {
   width: 100%;
   z-index: 20;
   transform-origin: top;
-  transform: scale(1, 1);
-  transition: 0.5s transform;
+  transition: 0.5s top;
 }
 .header_inner {
   display: flex;
@@ -413,24 +412,28 @@ html {
   transform: rotate(45deg) translateY(-50%);
 }
 
+.page-header.header,
 .scroll_on.header {
   background-color: #fff;
 }
+.page-header .header_inner,
 .scroll_on .header_inner {
   align-items: center;
 }
+.page-header .header_logo,
 .scroll_on .header_logo {
   background-image: url(../image/header-logo-sm.png);
   width: 20%;
   height: 42px;
   margin-top: unset;
 }
+.page-header .header_list li a,
 .scroll_on .header_list li a {
   padding: 2.18em clamp(0.8em, 1.8vw, 1.56em) 1.88em;
 }
 
 .hide .header {
-  transform: scale(1, 0);
+  top: -100px;
 }
 
 .contact {
@@ -973,6 +976,175 @@ html {
   font-weight: 600;
   margin-top: 15px;
   margin-bottom: 10px;
+}
+.page-user_card h2 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.75em;
+  text-align: justify;
+}
+
+.page-contact {
+  margin-top: 160px;
+}
+.page-contact input[name=tab_item] {
+  display: none;
+}
+.page-contact .tab_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 70px;
+  float: left;
+  border: 1px #A7A7A7 solid;
+  color: #6C6B6C;
+  font-weight: bold;
+}
+.page-contact input:checked + .tab_item {
+  background-color: #000;
+  color: #fff;
+  border: unset;
+  position: relative;
+}
+.reserve_block {
+  display: none;
+  background-color: #F5F5F5;
+  padding-top: 160px;
+  padding-bottom: 130px;
+  margin-bottom: 120px;
+}
+.reserve_block_title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.reserve_form {
+  width: 66%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.reserve_form_parts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+.reserve_form_parts input[type=text],
+.reserve_form_parts input[type=email],
+.reserve_form_parts input[type=tel],
+.reserve_form_parts textarea {
+  padding: 1em 0 1em 1em;
+  background-color: #fff;
+}
+.reserve_form_parts input[type=text],
+.reserve_form_parts input[type=email],
+.reserve_form_parts input[type=tel] {
+  width: 50%;
+}
+.reserve_form_parts.corporate input[type=text] {
+  width: 100%;
+}
+.reserve_form_parts textarea {
+  width: 100%;
+}
+.reserve_form_parts input[type=radio] {
+  margin-right: 10px;
+}
+.reserve_form_parts_title {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+.reserve_form_parts .radio_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.reserve_form_parts .radio_box:last-child {
+  margin-bottom: unset;
+}
+.reserve_form_parts .radio_box .privacy {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.reserve_form_parts.privacy {
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+.reserve_form_parts input[type=checkbox] {
+  margin-right: 10px;
+}
+.reserve_form_submit {
+  display: flex;
+  justify-content: center;
+}
+.reserve_form_submit .button {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  padding: 1em 2.25em;
+  font-size: clamp(14px, 1.2vw, 16px);
+  font-weight: 600;
+  border-radius: 999px;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  max-width: 346px;
+  min-width: 264px;
+  font-size: clamp(16px, 1.3vw, 18px);
+  font-weight: 400;
+}
+.reserve_form_submit .button::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #fff;
+  width: clamp(16px, 2.8vw, 33px);
+  height: 1px;
+  right: 2em;
+  top: 50%;
+  transform: translateX(9%) translateY(50%);
+}
+.reserve_form_submit .button::after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #fff;
+  width: 5px;
+  height: 5px;
+  right: 2em;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.required .reserve_form_parts_title {
+  position: relative;
+}
+.required .reserve_form_parts_title::after {
+  position: absolute;
+  content: "必須";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #B12626;
+  font-size: 12px;
+  font-weight: bold;
+  width: 42px;
+  height: 16px;
+  right: 0;
+  top: 0;
+  transform: translateX(calc(100% + 10px));
+}
+
+#reserve:checked ~ #reserve_block,
+#contact:checked ~ #contact_block {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

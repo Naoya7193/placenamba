@@ -1,0 +1,162 @@
+@use "../base/base";
+@use "../mixin/btn";
+@use "../setting/color";
+@use "../setting/function";
+
+.page-contact{
+    margin-top: 160px;
+
+    input[name="tab_item"] {
+        display: none;
+    }
+
+    .tab_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 70px;
+        float: left;
+        border: 1px #A7A7A7 solid;
+        color: #6C6B6C;
+        font-weight: bold;
+    }
+
+    input:checked + .tab_item {
+        background-color: color.$base-color;
+        color: color.$white;
+        border: unset;
+        position: relative;
+
+        &::after{
+            // 後で画像で三角を入れる
+        }
+    }
+}
+
+
+.reserve_block{
+    display: none;
+    background-color: color.$sub-gray;
+    padding-top: calc(70px + 90px);
+    padding-bottom: 130px;
+    margin-bottom: 120px;
+
+    &_title{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 85px;
+    }
+}
+
+.reserve_form{
+    width: 66%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &_parts{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 65px;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea{
+            padding: 1em 0 1em 1em;
+            background-color: color.$white;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"]{
+            width: 50%;
+        }
+
+        &.corporate{
+            input[type="text"]{
+                width: 100%;
+            }
+        }
+
+        textarea{
+            width: 100%;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        &_title{
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 20px;
+            width: fit-content;
+        }
+
+        .radio_box{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &:last-child{
+                margin-bottom: unset;
+            }
+
+            .privacy{
+                font-weight: 600;
+                letter-spacing: 0;
+            }
+        }
+
+        &.privacy{
+            margin: 0 auto;
+            margin-bottom: 90px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    }
+
+    &_submit{
+        display: flex;
+        justify-content: center;
+
+        .button{
+            @include btn.btn($btn-color:color.$base-color, $text_color:color.$white);
+        }
+    }
+}
+
+.required{
+    .reserve_form_parts_title{
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "必須";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: color.$white;
+            background-color: #B12626;
+            font-size: 12px;
+            font-weight: bold;
+            width: 42px;
+            height: 16px;
+            right: 0;
+            top: 0;
+            transform: translateX(calc(100% + 10px));
+        }
+    }
+}
+
+// タブとコンテンツの紐付け
+#reserve:checked ~ #reserve_block,
+#contact:checked ~ #contact_block{
+    display: block;
+}
