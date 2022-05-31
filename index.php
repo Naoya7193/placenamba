@@ -15,7 +15,7 @@
                 <br>シェアオフィス。
             </h1>
             <p class="concept_subcopy">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミ</p>
-            <a href="" class="button">Googleマップで見る</a>
+            <a href="https://g.page/osakacf?share"  target="_blank" rel="noopener noreferrer" class="button">Googleマップで見る</a>
         </div>
         <img src="<?php echo get_template_directory_uri(); ?>/image/map.png" alt="地図の画像" class="concept_map">
     </div>
@@ -66,12 +66,12 @@
     </div>
 
     <div class="office_button_block wrapper">
-        <a href="" class="buck_button"></a>
-        <a href="" class="front_button"></a>
+        <div class="back_button" id="back_button"></div>
+        <div class="front_button" id="front_button"></div>
     </div>
 
-    <div class="office_introduction wrapper">
-        <div class="office_introduction_card">
+    <div class="office_introduction wrapper" id="office_scroll">
+        <div class="office_introduction_card" id="office_item_scroll">
             <img src="<?php echo get_template_directory_uri(); ?>/image/office01.png" alt="プライベートオフィスの画像" class="office_introduction_image">
             <p class="office_introduction_title">プライベートオフィス</p>
         </div>

@@ -250,7 +250,7 @@ html {
   right: 50%;
   transform: translateX(50%);
 }
-.office_button_block .buck_button,
+.office_button_block .back_button,
 .office_button_block .front_button {
   display: flex;
   align-items: center;
@@ -262,7 +262,7 @@ html {
   margin-left: 10px;
   position: relative;
 }
-.office_button_block .buck_button::after,
+.office_button_block .back_button::after,
 .office_button_block .front_button::after {
   position: absolute;
   content: "";
@@ -273,13 +273,17 @@ html {
   border-left: 0;
   transform: rotate(-45deg);
 }
-.office_button_block .buck_button::after {
+.office_button_block .back_button::after {
   transform: rotate(135deg);
 }
 .office_introduction {
   display: flex;
   margin-top: 50px;
-  overflow: scroll;
+  overflow-x: auto;
+  width: 92.5vw;
+  max-width: 1331px;
+  margin-right: 0;
+  margin-left: 7.5%;
 }
 .office_introduction_card {
   text-align: center;
@@ -287,6 +291,7 @@ html {
 }
 .office_introduction_card:last-child {
   margin-right: 0;
+  padding-right: 7.5%;
 }
 .office_introduction_image {
   width: clamp(400px, 40vw, 560px);
