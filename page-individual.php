@@ -7,14 +7,14 @@
     <p class="page-individual_copy">用途に合わせて利用できる2つのプランをご用意</p>
     <div class="page-individual_container">
         <div class="page-individual_card single">
-            <a href="">
+            <a href="#single">
                 <p class="page-individual_card_plan">Plan01</p>
                 <p class="page-individual_card_copy">個室利用ができる</p>
                 <p class="page-individual_card_title">シングルオフィスプラン</p>
             </a>
         </div>
         <div class="page-individual_card free">
-            <a href="">
+            <a href="#free">
                 <p class="page-individual_card_plan">Plan02</p>
                 <p class="page-individual_card_copy">共有スペースを自由に利用</p>
                 <p class="page-individual_card_title">フリーオフィスプラン</p>
@@ -24,7 +24,7 @@
 </div>
 
 <!-- シングルオフィスプラン -->
-<div class="page-plan single">
+<div class="page-plan single" id="single">
     <p class="page-plan_number wrapper">Plan01</p>
     <div class="page-plan_inner wrapper_sm">
         <p class="page-plan_copy">個室利用ができるシングルオフィスプラン</p>
@@ -58,7 +58,7 @@
 </div>
 
 <!-- フリーオフィスプラン -->
-<div class="page-plan free">
+<div class="page-plan free" id="free">
     <p class="page-plan_number wrapper">Plan02</p>
     <div class="page-plan_inner wrapper_sm">
         <p class="page-plan_copy">共有スペースを自由に利用できるフリーオフィスプラン</p>

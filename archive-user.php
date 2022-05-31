@@ -33,6 +33,9 @@
 
         <?php
             endwhile;
+
+            wp_pagenavi();
+            
         else :
         ?>
 

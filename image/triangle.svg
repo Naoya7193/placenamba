@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="10" viewBox="0 0 41 10">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="2" y="9" width="41" height="10" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="スクロールグループ_3" data-name="スクロールグループ 3" transform="translate(-2 -9)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <path id="多角形_2" data-name="多角形 2" d="M22.5,0,45,18H0Z" transform="translate(45 18) rotate(180)"/>
+  </g>
+</svg>

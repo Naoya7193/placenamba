@@ -19,6 +19,7 @@
         float: left;
         border: 1px #A7A7A7 solid;
         color: #6C6B6C;
+        background-color: color.$white;
         font-weight: bold;
     }
 
@@ -29,7 +30,17 @@
         position: relative;
 
         &::after{
-            // 後で画像で三角を入れる
+            position: absolute;
+            content: "";
+            background-image: url(../image/triangle.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top center;
+            width: 42px;
+            height: 10px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(100%);
         }
     }
 }
@@ -65,8 +76,10 @@
         input[type="text"],
         input[type="email"],
         input[type="tel"],
+        input[type="date"],
+        select,
         textarea{
-            padding: 1em 0 1em 1em;
+            padding: 1em;
             background-color: color.$white;
         }
 
@@ -74,6 +87,40 @@
         input[type="email"],
         input[type="tel"]{
             width: 50%;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        input[type="tel"]::placeholder{
+            color: #BEBBBB;
+        }
+
+        input[type="date"]{
+            width: 250px;
+            margin-right: 10px;
+        }
+
+        .select_inner{
+            position: relative;
+            width: fit-content;
+            height: 100%;
+
+            &::after{
+                position: absolute;
+                content: "";
+                border: 1px solid color.$base-color;
+                border-left: 0;
+                border-top: 0;
+                width: 6px;
+                height: 6px;
+                transform: rotate(45deg) translateX(-50%);
+                top: 50%;
+                right: 10px;
+            }
+        }
+
+        select{
+            width: 100px;
         }
 
         &.corporate{
@@ -88,6 +135,20 @@
 
         input[type="radio"] {
             margin-right: 10px;
+        }
+
+        &_box{
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+
+            &:last-child{
+                margin-bottom: unset;
+            }
+        }
+
+        .date_label{
+            margin-right: 18px;
         }
 
         &_title{
@@ -130,6 +191,12 @@
             @include btn.btn($btn-color:color.$base-color, $text_color:color.$white);
         }
     }
+}
+
+.privacy_policy_link{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
 }
 
 .required{

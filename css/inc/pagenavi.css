@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.wrapper_sm {
+  width: 72%;
+  max-width: 1039px;
+  margin: 0 auto;
+}
+
+.section_title {
+  margin: 0 auto;
+  text-align: center;
+}
+.section_title_main {
+  font-family: "Avenir", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.page-section_main_title {
+  font-family: "Avenir", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.page-section_sub_title {
+  font-size: 13px;
+}
+
+.not_found {
+  margin-top: 135px;
+  margin-bottom: 120px;
+}
+.not_found_text {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.75;
+}
+
+.wp-pagenavi {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.pages {
+  display: none;
+}
+
+.current,
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  width: 45px;
+  height: 45px;
+}
+
+.current {
+  background-color: #000;
+  color: #fff;
+}
+
+.page {
+  border-color: #000 !important;
+}
+
+.nextpostslink,
+.previouspostslink {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  border: unset !important;
+}
+.nextpostslink::before,
+.previouspostslink::before {
+  position: absolute;
+  content: "次のページ";
+  right: 20px;
+  width: 85px;
+  transform: translateY(5%);
+}
+
+.nextpostslink {
+  right: 0;
+}
+.nextpostslink:before {
+  content: "次のページ";
+}
+
+.previouspostslink {
+  left: 0;
+}
+.previouspostslink:before {
+  left: 20px;
+  content: "前のページ";
+}
+
+/*# sourceMappingURL=pagenavi.css.map */

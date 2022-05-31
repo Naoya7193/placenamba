@@ -16,8 +16,11 @@
                     $title = get_the_title();
                 }
                 else{
-                    $title = "";
-                    $thumbnail = "";
+                    $thumbnail = get_template_directory_uri()."/image/null_mv.png";
+
+                    if($title ===""){
+                        $title = "Not Found";
+                    }
                 }
             ?>
 

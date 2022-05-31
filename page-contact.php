@@ -47,25 +47,25 @@
             <!-- 会社名記入欄 -->
             <div class="reserve_form_parts corporate required">
                 <h3 class="reserve_form_parts_title">会社名</h3>
-                <input type="text" id="corporate_name" placeholder="">
+                <input type="text" id="corporate_name" placeholder="大阪レンタルオフィス株式会社">
             </div>
 
             <!-- 氏名記入欄 -->
             <div class="reserve_form_parts required">
                 <h3 class="reserve_form_parts_title">氏名</h3>
-                <input type="text" id="name" placeholder="">
+                <input type="text" id="name" placeholder="山田太郎">
             </div>
 
             <!-- メールアドレス記入欄 -->
             <div class="reserve_form_parts required">
                 <h3 class="reserve_form_parts_title">メールアドレス</h3>
-                <input type="email" id="email" placeholder="">
+                <input type="email" id="email" placeholder="xxx@example.com">
             </div>
 
             <!-- 電話番号記入欄 -->
             <div class="reserve_form_parts required">
                 <h3 class="reserve_form_parts_title">お電話番号</h3>
-                <input type="tel" id="tel" placeholder="">
+                <input type="tel" id="tel" placeholder="00000000000">
             </div>
 
             <!-- 内覧方法ラジオボタン -->
@@ -86,12 +86,49 @@
             <!-- 内覧希望日時記入欄 -->
             <div class="reserve_form_parts required">
                 <h3 class="reserve_form_parts_title">内覧希望日時</h3>
+                <div class="reserve_form_parts_container">
+                    <div class="reserve_form_parts_box">
+                        <label class="date_label" for="date">第一希望</label>
+                        <input type="date" name="date" class="date">
+                        <div class="select_inner">
+                            <select name="time">
+                                <option value="default">選択</option>
+                                <option value="time_value">9時</option>
+                                <option value="time_value">10時</option>
+                                <option value="time_value">11時</option>
+                                <option value="time_value">12時</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <input id="how_to_radio" type="radio" name="how_to_radio" checked>
-                <label class="how_to_radio" for="how_to_radio">直接内覧</label>
+                    <div class="reserve_form_parts_box">
+                        <label class="date_label" for="date">第二希望</label>
+                        <input type="date" name="date" class="date">
+                        <div class="select_inner">
+                            <select name="time">
+                                <option value="default">選択</option>
+                                <option value="time_value">9時</option>
+                                <option value="time_value">10時</option>
+                                <option value="time_value">11時</option>
+                                <option value="time_value">12時</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <input id="how_to_radio" type="radio" name="how_to_radio">
-                <label class="how_to_radio" for="how_to_radio">オンライン内覧</label>
+                    <div class="reserve_form_parts_box">
+                        <label class="date_label" for="date">第三希望</label>
+                        <input type="date" name="date" class="date">
+                        <div class="select_inner">
+                            <select name="time">
+                                <option value="default">選択</option>
+                                <option value="time_value">9時</option>
+                                <option value="time_value">10時</option>
+                                <option value="time_value">11時</option>
+                                <option value="time_value">12時</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- 備考記入欄 -->
@@ -106,6 +143,7 @@
                     <input type="checkbox" id="privacy" name="privacy">
                     <h3 class="privacy">個人情報の取り扱いに同意します</h3>
                 </div>
+                <a href="policy" target="_blank" class="privacy_policy_link">プライバシーポリシーはこちら</a>
             </div>
 
             <!-- 送信ボタン -->
@@ -126,7 +164,7 @@
 
             <!-- 希望サービスラジオボタン -->
             <div class="reserve_form_parts required">
-                <h3 class="reserve_form_parts_title">希望サービス</h3>
+                <h3 class="reserve_form_parts_title">お問い合わせ内容</h3>
 
                 <div class="radio_box">
                     <input id="servise_radio" type="radio" name="service_radio" checked>
@@ -152,25 +190,25 @@
             <!-- 会社名記入欄 -->
             <div class="reserve_form_parts corporate required">
                 <h3 class="reserve_form_parts_title">会社名</h3>
-                <input type="text" id="corporate_name" placeholder="">
+                <input type="text" id="corporate_name" placeholder="大阪レンタルオフィス株式会社">
             </div>
 
             <!-- 氏名記入欄 -->
             <div class="reserve_form_parts required">
                 <h3 class="reserve_form_parts_title">氏名</h3>
-                <input type="text" id="name" placeholder="">
+                <input type="text" id="name" placeholder="山田太郎">
             </div>
 
             <!-- メールアドレス記入欄 -->
             <div class="reserve_form_parts required">
                 <h3 class="reserve_form_parts_title">メールアドレス</h3>
-                <input type="email" id="email" placeholder="">
+                <input type="email" id="email" placeholder="xxx@example.com">
             </div>
 
             <!-- 電話番号記入欄 -->
             <div class="reserve_form_parts required">
                 <h3 class="reserve_form_parts_title">お電話番号</h3>
-                <input type="tel" id="tel" placeholder="">
+                <input type="tel" id="tel" placeholder="00000000000">
             </div>
 
             <!-- 内覧方法ラジオボタン -->
@@ -191,12 +229,49 @@
             <!-- 内覧希望日時記入欄 -->
             <div class="reserve_form_parts required">
                 <h3 class="reserve_form_parts_title">内覧希望日時</h3>
+                <div class="reserve_form_parts_container">
+                    <div class="reserve_form_parts_box">
+                        <label class="date_label" for="date">第一希望</label>
+                        <input type="date" name="date" class="date">
+                        <div class="select_inner">
+                            <select name="time">
+                                <option value="default">選択</option>
+                                <option value="time_value">9時</option>
+                                <option value="time_value">10時</option>
+                                <option value="time_value">11時</option>
+                                <option value="time_value">12時</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <input id="how_to_radio" type="radio" name="how_to_radio" checked>
-                <label class="how_to_radio" for="how_to_radio">直接内覧</label>
+                    <div class="reserve_form_parts_box">
+                        <label class="date_label" for="date">第二希望</label>
+                        <input type="date" name="date" class="date">
+                        <div class="select_inner">
+                            <select name="time">
+                                <option value="default">選択</option>
+                                <option value="time_value">9時</option>
+                                <option value="time_value">10時</option>
+                                <option value="time_value">11時</option>
+                                <option value="time_value">12時</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <input id="how_to_radio" type="radio" name="how_to_radio">
-                <label class="how_to_radio" for="how_to_radio">オンライン内覧</label>
+                    <div class="reserve_form_parts_box">
+                        <label class="date_label" for="date">第三希望</label>
+                        <input type="date" name="date" class="date">
+                        <div class="select_inner">
+                            <select name="time">
+                                <option value="default">選択</option>
+                                <option value="time_value">9時</option>
+                                <option value="time_value">10時</option>
+                                <option value="time_value">11時</option>
+                                <option value="time_value">12時</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- 備考記入欄 -->
@@ -211,6 +286,7 @@
                     <input type="checkbox" id="privacy" name="privacy">
                     <h3 class="privacy">個人情報の取り扱いに同意します</h3>
                 </div>
+                <a href="policy" target="_blank" class="privacy_policy_link">プライバシーポリシーはこちら</a>
             </div>
 
             <!-- 送信ボタン -->

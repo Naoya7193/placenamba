@@ -1,0 +1,25 @@
+@use "../base/base";
+@use "../setting/color";
+@use "../setting/function";
+
+.page-policy{
+    line-height: 1.75;
+    letter-spacing: 0;
+    text-align: justify;
+    margin-bottom: 100px;
+
+    h2{
+        margin-top: 130px;
+        font-size: 24px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid color.$base-color;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 20px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+}
