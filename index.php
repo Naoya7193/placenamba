@@ -17,7 +17,7 @@
             <p class="concept_subcopy">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミ</p>
             <a href="https://g.page/osakacf?share"  target="_blank" rel="noopener noreferrer" class="button">Googleマップで見る</a>
         </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/image/map.png" alt="地図の画像" class="concept_map">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/map.svg" alt="地図の画像" class="concept_map">
     </div>
 </div>
 

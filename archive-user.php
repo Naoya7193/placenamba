@@ -24,11 +24,9 @@
         ?>
 
         <div class="page-user_card">
-            <a class="page-user_card_link" href="<?php the_permalink(); ?>">
-                <img class="page-user_card_image" src="<?php echo $user_image; ?>" alt="">
-                <p class="page-user_card_title"><?php the_title(); ?></p>
-                <?php the_content(); ?>
-            </a>
+            <img class="page-user_card_image" src="<?php echo $user_image; ?>" alt="">
+            <p class="page-user_card_title"><?php the_title(); ?></p>
+            <?php the_content(); ?>
         </div>
 
         <?php

@@ -4,12 +4,15 @@
 
 .company-block{
     margin-top: 130px;
+    white-space: nowrap;
 
     .wp-block-table{
         margin-top: 65px;
+        overflow-x: unset;
 
         table{
             width: 70%;
+            min-width: 500px;
         }
 
         td{
@@ -72,6 +75,7 @@
 
         .wp-block-image{
             width: 31%;
+            min-width: 200px;
             margin: unset;
             object-fit: contain;
         }
@@ -88,6 +92,8 @@
         }
 
         &_address{
+            font-size: clamp(14px,1.2vw,16px);
+            white-space: nowrap;
             margin-bottom: 12px;
             padding-left: 25px;
             position: relative;
@@ -107,6 +113,7 @@
         }
 
         &_tel{
+            font-size: clamp(14px,1.2vw,16px);
             padding-left: 25px;
             position: relative;
 

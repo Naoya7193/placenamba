@@ -176,6 +176,16 @@
                 border-left: 0;
                 transform: rotate(-45deg);
             }
+
+            &:hover{
+                background-color: color.$base-color;
+                transition: .25s background-color;
+
+                &::after{
+                    border-color: color.$white;
+                    transition: .25s border-color;
+                }
+            }
         }
 
         .back_button{

@@ -9,7 +9,7 @@
     z-index: -20;
 
     &_title{
-        font-size: 30px;
+        font-size: clamp(24px,2.1vw,30px);
         font-weight: 600;
         position: absolute;
         bottom: -36px;
@@ -17,9 +17,10 @@
 
         background-color: color.$main-color;
         width: 40%;
-        padding-top: 58px;
-        padding-bottom: 58px;
+        padding-top: clamp(46px,4.2vw,58px);
+        padding-bottom: clamp(46px,4.2vw,58px);
         padding-left: 10.8%;
+        min-width: 400px;
 
         &_inner{
             padding-bottom: 24px;

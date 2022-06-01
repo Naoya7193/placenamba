@@ -85,6 +85,10 @@ html {
 
 .page {
   border-color: #000 !important;
+  transition: 0.3s opacity;
+}
+.page:hover {
+  opacity: 0.4;
 }
 
 .nextpostslink,
@@ -94,12 +98,17 @@ html {
   display: flex;
   align-items: center;
   border: unset !important;
+  transition: 0.3s opacity;
+}
+.nextpostslink:hover,
+.previouspostslink:hover {
+  opacity: 0.5;
 }
 .nextpostslink::before,
 .previouspostslink::before {
   position: absolute;
-  content: "次のページ";
-  right: 20px;
+  font-size: clamp(14px, 1.5vw, 16px);
+  right: 100%;
   width: 85px;
   transform: translateY(5%);
 }

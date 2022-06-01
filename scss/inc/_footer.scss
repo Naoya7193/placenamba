@@ -38,16 +38,23 @@
         padding-bottom: 65px;
         justify-content: space-between;
         align-items: flex-start;
+        gap: 25px;
     }
 
     &_image_link{
         width: 17%;
+        min-width: 150px;
     }
 
     &_image{
         width: 100%;
         object-fit: contain;
         margin-right: 30px;
+
+        &:hover{
+            opacity: .7;
+            transition: .2s opacity;
+        }
     }
 
     &_info{
@@ -67,11 +74,16 @@
     &_list{
         display: flex;
         flex-wrap: wrap;
+        column-gap: 45px;
 
         li a{
-            margin-left: 45px;
             white-space: nowrap;
             line-height: 1.75em;
+
+            &:hover{
+                opacity: .7;
+                transition: .2s opacity;
+            }
         }
     }
 

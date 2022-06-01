@@ -38,7 +38,7 @@
 
 <!-- ヘッダー -->
 <header
-    <?php if(is_page() or get_post_type()==="user"):?>
+    <?php if(is_page() or is_404() or get_post_type()==="user"):?>
         echo class="header page-header"
     <?php else: ?>
         echo class="header"

@@ -32,6 +32,11 @@
 
 .page{
     border-color: color.$base-color!important;
+    transition: .3s opacity;
+
+    &:hover{
+        opacity: .4;
+    }
 }
 
 .nextpostslink,
@@ -41,11 +46,16 @@
     display: flex;
     align-items: center;
     border: unset!important;
+    transition: .3s opacity;
+
+    &:hover{
+        opacity: .5;
+    }
 
     &::before{
         position: absolute;
-        content: "次のページ";
-        right: 20px;
+        font-size: clamp(14px,1.5vw,16px);
+        right: 100%;
         width: 85px;
         transform: translateY(5%);
     }

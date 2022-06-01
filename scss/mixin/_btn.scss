@@ -40,6 +40,14 @@ $initType: 'normal';
         transform: rotate(45deg) translateY(-50%);
     }
 
+    &:hover{
+        &::before,
+        &::after{
+            right: .8em;
+            transition: .3s right;
+        }
+    }
+
     @if( $type == 'normal' ){
         max-width: 346px;
         min-width: 264px;
@@ -58,6 +66,19 @@ $initType: 'normal';
         max-width: 510px;
         font-family: Arial, Helvetica, sans-serif;
         padding: 1.87em;
+
+        &::before,
+        &::after{
+            right: 9em;
+            transition: .3s right;
+        }
+
+        &:hover{
+            &::before,
+            &::after{
+                right: 5em;
+            }
+        }
     }
 
 }

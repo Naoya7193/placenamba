@@ -10,7 +10,6 @@
     width: 100%;
     z-index: 20;
     transform-origin: top;
-    // transform: scale(1,1);
     transition: .5s top;
 
     &_inner{
@@ -29,6 +28,11 @@
         width: 17%;
         height: 100px;
         margin-top: 25px;
+
+        &:hover{
+            opacity: .6;
+            transition: .3s opacity;
+        }
     }
 
     &_nav{
@@ -46,6 +50,26 @@
             padding: 1.38em clamp(.8em, 1.8vw, 1.56em);
             font-size: clamp(14px,1.2vw,16px);
             white-space: nowrap;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: "";
+                border-bottom: 1px solid color.$base-color;
+                width: 80%;
+                height: 1px;
+                bottom: 15%;
+                left: 10%;
+                transform: scaleX(0);
+
+                transition: .3s transform;
+            }
+
+            &:hover{
+                &::after{
+                    transform: scaleX(1);
+                }
+            }
         }
     }
 
@@ -75,6 +99,10 @@
 
     .header_list li a{
         padding: 2.18em clamp(.8em, 1.8vw, 1.56em) 1.88em;
+
+        &::after{
+            bottom: 20px;
+        }
     }
 }
 

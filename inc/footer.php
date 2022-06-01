@@ -1,9 +1,9 @@
 <!-- コンタクト -->
-<?php if (is_page('contact')):
+<?php if (is_page('contact') or is_page('reserve')):
         else:?>
     <div class="contact">
         <a href="/contact" class="button reserve">今すぐ内覧予約</a>
-        <a href="/contact" class="button inquiry">お問い合わせ</a>
+        <a href="/reserve" class="button inquiry">お問い合わせ</a>
     </div>
 <?php endif; ?>
 

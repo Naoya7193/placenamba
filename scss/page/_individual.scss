@@ -7,7 +7,7 @@
 
     &_copy{
         text-align: center;
-        font-size: 24px;
+        font-size: clamp(20px,1.8vw,24px);
         font-weight: 600;
     }
 
@@ -25,6 +25,11 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        transition: .3s transform;
+
+        &:hover{
+            transform: scale(1.1);
+        }
 
         a{
             display: flex;
@@ -45,6 +50,7 @@
         }
 
         &_plan{
+            font-size: clamp(14px,1.2vw,16px);
             position: absolute;
             font-family: "Avenir", sans-serif;
             top: 24%;
@@ -63,11 +69,12 @@
         }
 
         &_copy{
-            margin-bottom: 12px;
+            margin-bottom: clamp(8px,0.9vw,12px);
+            font-size: clamp(14px,1.2vw,16px);
         }
 
         &_title{
-            font-size: 22px;
+            font-size: clamp(18px,1.6vw,22px);
             font-weight: 600;
         }
     }
@@ -99,7 +106,7 @@
 
 .page-plan_number{
     font-family: "Avenir", sans-serif;
-    font-size: 39px;
+    font-size: clamp(32px,2.8vw,39px);
     font-weight: 600;
     margin-bottom: 45px;
 

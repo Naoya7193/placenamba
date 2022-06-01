@@ -154,6 +154,10 @@ html {
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
 }
+.concept .button:hover::before, .concept .button:hover::after {
+  right: 0.8em;
+  transition: 0.3s right;
+}
 .concept_map {
   width: 49%;
   margin-right: 5%;
@@ -230,6 +234,10 @@ html {
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
 }
+.plan_summary .button:hover::before, .plan_summary .button:hover::after {
+  right: 0.8em;
+  transition: 0.3s right;
+}
 .plan_summary:nth-child(odd) {
   flex-direction: row-reverse;
 }
@@ -272,6 +280,16 @@ html {
   border-top: 0;
   border-left: 0;
   transform: rotate(-45deg);
+}
+.office_button_block .back_button:hover,
+.office_button_block .front_button:hover {
+  background-color: #000;
+  transition: 0.25s background-color;
+}
+.office_button_block .back_button:hover::after,
+.office_button_block .front_button:hover::after {
+  border-color: #fff;
+  transition: 0.25s border-color;
 }
 .office_button_block .back_button::after {
   transform: rotate(135deg);
@@ -373,6 +391,10 @@ html {
   height: 100px;
   margin-top: 25px;
 }
+.header_logo:hover {
+  opacity: 0.6;
+  transition: 0.3s opacity;
+}
 .header_nav {
   display: flex;
   height: fit-content;
@@ -387,6 +409,21 @@ html {
   padding: 1.38em clamp(0.8em, 1.8vw, 1.56em);
   font-size: clamp(14px, 1.2vw, 16px);
   white-space: nowrap;
+  position: relative;
+}
+.header_list li a::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #000;
+  width: 80%;
+  height: 1px;
+  bottom: 15%;
+  left: 10%;
+  transform: scaleX(0);
+  transition: 0.3s transform;
+}
+.header_list li a:hover::after {
+  transform: scaleX(1);
 }
 .header .button {
   display: block;
@@ -427,6 +464,10 @@ html {
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
 }
+.header .button:hover::before, .header .button:hover::after {
+  right: 0.8em;
+  transition: 0.3s right;
+}
 
 .page-header.header,
 .scroll_on.header {
@@ -446,6 +487,10 @@ html {
 .page-header .header_list li a,
 .scroll_on .header_list li a {
   padding: 2.18em clamp(0.8em, 1.8vw, 1.56em) 1.88em;
+}
+.page-header .header_list li a::after,
+.scroll_on .header_list li a::after {
+  bottom: 20px;
 }
 
 .hide .header {
@@ -500,6 +545,17 @@ html {
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
 }
+.contact .button.reserve:hover::before, .contact .button.reserve:hover::after {
+  right: 0.8em;
+  transition: 0.3s right;
+}
+.contact .button.reserve::before, .contact .button.reserve::after {
+  right: 9em;
+  transition: 0.3s right;
+}
+.contact .button.reserve:hover::before, .contact .button.reserve:hover::after {
+  right: 5em;
+}
 .contact .button.inquiry {
   display: block;
   background-color: #000;
@@ -536,6 +592,17 @@ html {
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
 }
+.contact .button.inquiry:hover::before, .contact .button.inquiry:hover::after {
+  right: 0.8em;
+  transition: 0.3s right;
+}
+.contact .button.inquiry::before, .contact .button.inquiry::after {
+  right: 9em;
+  transition: 0.3s right;
+}
+.contact .button.inquiry:hover::before, .contact .button.inquiry:hover::after {
+  right: 5em;
+}
 
 .footer {
   background-color: #000;
@@ -548,14 +615,20 @@ html {
   padding-bottom: 65px;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 25px;
 }
 .footer_image_link {
   width: 17%;
+  min-width: 150px;
 }
 .footer_image {
   width: 100%;
   object-fit: contain;
   margin-right: 30px;
+}
+.footer_image:hover {
+  opacity: 0.7;
+  transition: 0.2s opacity;
 }
 .footer_info {
   font-family: Arial, Helvetica, sans-serif;
@@ -571,11 +644,15 @@ html {
 .footer_list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 45px;
 }
 .footer_list li a {
-  margin-left: 45px;
   white-space: nowrap;
   line-height: 1.75em;
+}
+.footer_list li a:hover {
+  opacity: 0.7;
+  transition: 0.2s opacity;
 }
 .footer .copylight {
   text-align: center;
@@ -592,16 +669,17 @@ html {
   z-index: -20;
 }
 .mv_temp_title {
-  font-size: 30px;
+  font-size: clamp(24px, 2.1vw, 30px);
   font-weight: 600;
   position: absolute;
   bottom: -36px;
   left: 0;
   background-color: #F4F4F4;
   width: 40%;
-  padding-top: 58px;
-  padding-bottom: 58px;
+  padding-top: clamp(46px, 4.2vw, 58px);
+  padding-bottom: clamp(46px, 4.2vw, 58px);
   padding-left: 10.8%;
+  min-width: 400px;
 }
 .mv_temp_title_inner {
   padding-bottom: 24px;
@@ -662,6 +740,17 @@ html {
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
 }
+.page-others .button:hover::before, .page-others .button:hover::after {
+  right: 0.8em;
+  transition: 0.3s right;
+}
+.page-others .button::before, .page-others .button::after {
+  right: 9em;
+  transition: 0.3s right;
+}
+.page-others .button:hover::before, .page-others .button:hover::after {
+  right: 5em;
+}
 
 .page-facility {
   margin-top: 135px;
@@ -681,6 +770,7 @@ html {
   width: 100%;
 }
 .page-facility_image_title {
+  font-size: clamp(12px, 1.2vw, 16px);
   font-weight: 600;
   margin-top: 14px;
 }
@@ -719,6 +809,10 @@ html {
 
 .page {
   border-color: #000 !important;
+  transition: 0.3s opacity;
+}
+.page:hover {
+  opacity: 0.4;
 }
 
 .nextpostslink,
@@ -728,12 +822,17 @@ html {
   display: flex;
   align-items: center;
   border: unset !important;
+  transition: 0.3s opacity;
+}
+.nextpostslink:hover,
+.previouspostslink:hover {
+  opacity: 0.5;
 }
 .nextpostslink::before,
 .previouspostslink::before {
   position: absolute;
-  content: "次のページ";
-  right: 20px;
+  font-size: clamp(14px, 1.5vw, 16px);
+  right: 100%;
   width: 85px;
   transform: translateY(5%);
 }
@@ -755,12 +854,15 @@ html {
 
 .company-block {
   margin-top: 130px;
+  white-space: nowrap;
 }
 .company-block .wp-block-table {
   margin-top: 65px;
+  overflow-x: unset;
 }
 .company-block .wp-block-table table {
   width: 70%;
+  min-width: 500px;
 }
 .company-block .wp-block-table td {
   padding-top: 32px;
@@ -810,6 +912,7 @@ html {
 }
 .locations-block_card .wp-block-image {
   width: 31%;
+  min-width: 200px;
   margin: unset;
   object-fit: contain;
 }
@@ -823,6 +926,8 @@ html {
   margin-bottom: 25px;
 }
 .locations-block_card_address {
+  font-size: clamp(14px, 1.2vw, 16px);
+  white-space: nowrap;
   margin-bottom: 12px;
   padding-left: 25px;
   position: relative;
@@ -840,6 +945,7 @@ html {
   left: 0;
 }
 .locations-block_card_tel {
+  font-size: clamp(14px, 1.2vw, 16px);
   padding-left: 25px;
   position: relative;
 }
@@ -861,7 +967,7 @@ html {
   margin-top: 136px;
 }
 .page-plan_copy {
-  font-size: 30px;
+  font-size: clamp(26px, 2.2vw, 30px);
   font-weight: 600;
   margin-bottom: 65px;
 }
@@ -883,7 +989,7 @@ html {
   right: -19.5%;
 }
 .page-plan_text_inner {
-  font-size: 20px;
+  font-size: clamp(16px, 1.5vw, 20px);
   line-height: 2em;
   letter-spacing: 0;
   text-align: justify;
@@ -921,7 +1027,7 @@ html {
 }
 .page-individual_copy {
   text-align: center;
-  font-size: 24px;
+  font-size: clamp(20px, 1.8vw, 24px);
   font-weight: 600;
 }
 .page-individual_container {
@@ -936,6 +1042,10 @@ html {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  transition: 0.3s transform;
+}
+.page-individual_card:hover {
+  transform: scale(1.1);
 }
 .page-individual_card a {
   display: flex;
@@ -952,6 +1062,7 @@ html {
   background-image: url(../image/free_office_plan.png);
 }
 .page-individual_card_plan {
+  font-size: clamp(14px, 1.2vw, 16px);
   position: absolute;
   font-family: "Avenir", sans-serif;
   top: 24%;
@@ -968,10 +1079,11 @@ html {
   transform: rotate(-26deg);
 }
 .page-individual_card_copy {
-  margin-bottom: 12px;
+  margin-bottom: clamp(8px, 0.9vw, 12px);
+  font-size: clamp(14px, 1.2vw, 16px);
 }
 .page-individual_card_title {
-  font-size: 22px;
+  font-size: clamp(18px, 1.6vw, 22px);
   font-weight: 600;
 }
 
@@ -997,7 +1109,7 @@ html {
 
 .page-plan_number {
   font-family: "Avenir", sans-serif;
-  font-size: 39px;
+  font-size: clamp(32px, 2.8vw, 39px);
   font-weight: 600;
   margin-bottom: 45px;
   position: relative;
@@ -1056,12 +1168,12 @@ html {
   margin-bottom: 40px;
 }
 .page-user_copy {
-  font-size: 30px;
+  font-size: clamp(26px, 2.2vw, 30px);
   font-weight: bold;
   margin-bottom: 60px;
 }
 .page-user_text {
-  font-size: 20px;
+  font-size: clamp(16px, 1.5vw, 20px);
   line-height: 2em;
   letter-spacing: 0;
   text-align: justify;
@@ -1074,6 +1186,7 @@ html {
 .page-user_card {
   width: 47%;
   margin-bottom: 115px;
+  font-size: clamp(14px, 1.3vw, 16px);
 }
 .page-user_card_link {
   display: block;
@@ -1083,14 +1196,14 @@ html {
   object-fit: contain;
 }
 .page-user_card_title {
-  font-size: 24px;
+  font-size: clamp(18px, 1.8vw, 24px);
   font-weight: 600;
   margin-top: 15px;
   margin-bottom: 10px;
 }
 .page-user_card h2 {
   margin-top: 15px;
-  font-size: 20px;
+  font-size: clamp(16px, 1.5vw, 20px);
   font-weight: 600;
   line-height: 1.75em;
   text-align: justify;
@@ -1173,6 +1286,7 @@ html {
 .reserve_form_parts input[type=email],
 .reserve_form_parts input[type=tel] {
   width: 50%;
+  min-width: 300px;
 }
 .reserve_form_parts input[type=text]::placeholder,
 .reserve_form_parts input[type=email]::placeholder,
@@ -1288,6 +1402,10 @@ html {
   right: 2em;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
+}
+.reserve_form_submit .button:hover::before, .reserve_form_submit .button:hover::after {
+  right: 0.8em;
+  transition: 0.3s right;
 }
 
 .privacy_policy_link {
