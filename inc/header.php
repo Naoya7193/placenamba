@@ -2,25 +2,49 @@
 <html lang="jp">
 
 <head>
+    <?php 
+    if(is_home() or is_front_page()){
+        $pagetitle = 'THE PLACE NAMBA | トップページ';
+        $ogptitle = 'トップページ';
+    }
+    elseif(is_archive()){
+        $pagetitle = '利用者紹介 - THE PLACE NAMBA';
+        $ogptitle = '利用者紹介';
+    }
+    elseif(is_404()){
+        $pagetitle = 'Not Found - THE PLACE NAMBA';
+        $ogptitle = '404';
+    }
+    else{
+        $current_page = get_the_title()." - THE PLACE NAMBA";
+        $pagetitle = $current_page;
+        $ogptitle = get_the_title();
+    }
+
+    $ogptype = is_home() || is_front_page() ? 'website' : 'article';
+    $ogpurl = nowUrl();
+    ?>
     <!-- 文字コード -->
     <meta charset="UTF-8">
     <!-- IEバグ回避用 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- タイトル -->
+    <title><?= $pagetitle ?></title>
     <!-- 説明文 -->
-    <meta name="description" content="">
+    <meta name="description" content="ミニマムな働き方、もっと広がる可能性。なんば駅から徒歩2分のシェアオフィス。">
     <!-- ビューポート -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- OGP -->
-    <meta property="og:title" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content=<?= $ogptitle ?>>
+    <meta property="og:type" content=<?= $ogptype ?>>
+    <meta property="og:description" content="ミニマムな働き方、もっと広がる可能性。なんば駅から徒歩2分のシェアオフィス。">
+    <meta property="og:url" content=<?= $ogpurl ?>>
+    <meta property="og:site_name" content="The Place Namba">
+    <meta property="og:image" content="<?= get_template_directory_uri(); ?>/image/ogp_sample.png">
     <!-- Twitter OGP -->
     <meta name="twitter:card" content="summary_large_image">
     <!-- ファビコン -->
-    <link rel="" href="">
+    <link rel="shortcut icon" href="<?= get_template_directory_uri(); ?>/image/favicon.ico">
     <!-- Webフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +62,7 @@
 
 <!-- ヘッダー -->
 <header
-    <?php if(is_page() or is_404() or get_post_type()==="user"):?>
+    <?php if(is_page() or is_archive() or is_404()):?>
         echo class="header page-header"
     <?php else: ?>
         echo class="header"

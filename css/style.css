@@ -143,6 +143,7 @@ html {
   right: 2em;
   top: 50%;
   transform: translateX(9%) translateY(50%);
+  transition: 0.3s right;
 }
 .concept .button::after {
   position: absolute;
@@ -153,10 +154,10 @@ html {
   right: 2em;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
+  transition: 0.3s right;
 }
 .concept .button:hover::before, .concept .button:hover::after {
   right: 0.8em;
-  transition: 0.3s right;
 }
 .concept_map {
   width: 49%;
@@ -223,6 +224,7 @@ html {
   right: 2em;
   top: 50%;
   transform: translateX(9%) translateY(50%);
+  transition: 0.3s right;
 }
 .plan_summary .button::after {
   position: absolute;
@@ -233,10 +235,10 @@ html {
   right: 2em;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
+  transition: 0.3s right;
 }
 .plan_summary .button:hover::before, .plan_summary .button:hover::after {
   right: 0.8em;
-  transition: 0.3s right;
 }
 .plan_summary:nth-child(odd) {
   flex-direction: row-reverse;
@@ -302,6 +304,9 @@ html {
   max-width: 1331px;
   margin-right: 0;
   margin-left: 7.5%;
+}
+.office_introduction::-webkit-scrollbar {
+  display: none;
 }
 .office_introduction_card {
   text-align: center;
@@ -453,6 +458,7 @@ html {
   right: 2em;
   top: 50%;
   transform: translateX(9%) translateY(50%);
+  transition: 0.3s right;
 }
 .header .button::after {
   position: absolute;
@@ -463,10 +469,10 @@ html {
   right: 2em;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
+  transition: 0.3s right;
 }
 .header .button:hover::before, .header .button:hover::after {
   right: 0.8em;
-  transition: 0.3s right;
 }
 
 .page-header.header,
@@ -534,6 +540,7 @@ html {
   right: 2em;
   top: 50%;
   transform: translateX(9%) translateY(50%);
+  transition: 0.3s right;
 }
 .contact .button.reserve::after {
   position: absolute;
@@ -544,10 +551,10 @@ html {
   right: 2em;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
+  transition: 0.3s right;
 }
 .contact .button.reserve:hover::before, .contact .button.reserve:hover::after {
   right: 0.8em;
-  transition: 0.3s right;
 }
 .contact .button.reserve::before, .contact .button.reserve::after {
   right: 9em;
@@ -581,6 +588,7 @@ html {
   right: 2em;
   top: 50%;
   transform: translateX(9%) translateY(50%);
+  transition: 0.3s right;
 }
 .contact .button.inquiry::after {
   position: absolute;
@@ -591,10 +599,10 @@ html {
   right: 2em;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
+  transition: 0.3s right;
 }
 .contact .button.inquiry:hover::before, .contact .button.inquiry:hover::after {
   right: 0.8em;
-  transition: 0.3s right;
 }
 .contact .button.inquiry::before, .contact .button.inquiry::after {
   right: 9em;
@@ -729,6 +737,7 @@ html {
   right: 2em;
   top: 50%;
   transform: translateX(9%) translateY(50%);
+  transition: 0.3s right;
 }
 .page-others .button::after {
   position: absolute;
@@ -739,10 +748,10 @@ html {
   right: 2em;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
+  transition: 0.3s right;
 }
 .page-others .button:hover::before, .page-others .button:hover::after {
   right: 0.8em;
-  transition: 0.3s right;
 }
 .page-others .button::before, .page-others .button::after {
   right: 9em;
@@ -1209,6 +1218,16 @@ html {
   text-align: justify;
 }
 
+.nouser {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .page-contact {
   margin-top: 160px;
 }
@@ -1392,6 +1411,7 @@ html {
   right: 2em;
   top: 50%;
   transform: translateX(9%) translateY(50%);
+  transition: 0.3s right;
 }
 .reserve_form_submit .button::after {
   position: absolute;
@@ -1402,16 +1422,20 @@ html {
   right: 2em;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
+  transition: 0.3s right;
 }
 .reserve_form_submit .button:hover::before, .reserve_form_submit .button:hover::after {
   right: 0.8em;
-  transition: 0.3s right;
 }
 
 .privacy_policy_link {
   text-align: center;
   font-size: 14px;
   text-decoration: underline;
+  transition: 0.2s opacity;
+}
+.privacy_policy_link:hover {
+  opacity: 0.5;
 }
 
 .required .reserve_form_parts_title {

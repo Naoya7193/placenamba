@@ -37,7 +37,7 @@
         else :
         ?>
 
-        <p>まだ利用者はいません</p>
+        <p class="nouser">まだ掲載情報はありません</p>
 
         <?php
         endif;
